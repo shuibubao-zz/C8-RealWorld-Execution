@@ -1,0 +1,262 @@
+{
+  "generated_at": "2026-11-14T20:12:56",
+  "interpreter": "C:\\Users\\卢怡然\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe",
+  "python_version": "3.13.14",
+  "as_of_simulation": "2026-11-18",
+  "holdout_accuracy": {
+    "total": 20,
+    "correct": 20,
+    "accuracy": 1.0,
+    "per_intent": {
+      "announcement": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "answer": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "discussion": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "question": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "resource": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "social": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "submission": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      }
+    },
+    "confusion": {}
+  },
+  "summary": {
+    "pass(合成数据)": 2,
+    "pass": 15,
+    "not_met": 5
+  },
+  "items": [
+    {
+      "code": "L1-1",
+      "requirement": "提取 >=100 条群消息",
+      "measured": 150,
+      "target": ">=100",
+      "status": "pass(合成数据)",
+      "evidence": "evidence/sample_output.jsonl",
+      "note": "条数达标但来源为合成样本，非真实微信数据"
+    },
+    {
+      "code": "L1-2",
+      "requirement": "输出符合 7 字段 JSON schema",
+      "measured": 150,
+      "target": "150/150",
+      "status": "pass",
+      "evidence": "evidence/sample_output.jsonl",
+      "note": ""
+    },
+    {
+      "code": "L1-3",
+      "requirement": "能区分文本/文件/图片等消息类型",
+      "measured": [
+        "file",
+        "image",
+        "link",
+        "system",
+        "text",
+        "voice"
+      ],
+      "target": "6 种全覆盖",
+      "status": "pass",
+      "evidence": "evidence/sample_output.meta.json",
+      "note": ""
+    },
+    {
+      "code": "L1-4",
+      "requirement": "CLI 可重复运行、支持时间范围参数",
+      "measured": true,
+      "target": "两次输出 sha256 一致",
+      "status": "pass",
+      "evidence": "evidence/pipeline_output.txt",
+      "note": ""
+    },
+    {
+      "code": "L1-5",
+      "requirement": "从【真实】本地微信数据提取 >=100 条",
+      "measured": 0,
+      "target": ">=100 条真实消息",
+      "status": "not_met",
+      "evidence": "demo/data/README.md",
+      "note": "隐私与授权边界：本次未解密/未读取任何真实聊天记录"
+    },
+    {
+      "code": "L2-1",
+      "requirement": "分类器准确率 >70%（标注测试集）",
+      "measured": 1.0,
+      "target": ">0.70",
+      "status": "pass(合成数据)",
+      "evidence": "evidence/classifier_metrics.json",
+      "note": "同源合成集；独立手写变体集准确率=1.0000 (20/20)，两者均非真实人工标注集"
+    },
+    {
+      "code": "L2-2",
+      "requirement": "正确检测 >=5 个提交事件",
+      "measured": 8,
+      "target": ">=5",
+      "status": "pass",
+      "evidence": "evidence/submissions.json",
+      "note": "其中 4 完整 / 4 缺 AI 日志"
+    },
+    {
+      "code": "L2-3",
+      "requirement": "提取 >=10 个有意义 Q&A 对",
+      "measured": 14,
+      "target": ">=10",
+      "status": "pass",
+      "evidence": "evidence/qa_pairs.json",
+      "note": ""
+    },
+    {
+      "code": "L2-4",
+      "requirement": "模块可独立运行也可组合",
+      "measured": 11,
+      "target": "全部 CLI exit=0",
+      "status": "pass",
+      "evidence": "evidence/pipeline_output.txt",
+      "note": ""
+    },
+    {
+      "code": "L3-1",
+      "requirement": "Property Graph >=20 学生 x 8 挑战",
+      "measured": "22 学生 / 8 挑战",
+      "target": ">=20 x >=8",
+      "status": "pass",
+      "evidence": "evidence/graph.json",
+      "note": ""
+    },
+    {
+      "code": "L3-2",
+      "requirement": "自然语言查询 >=5 种类型",
+      "measured": 6,
+      "target": ">=5",
+      "status": "pass",
+      "evidence": "evidence/nl_query_answers.md",
+      "note": "实际覆盖：class_summary、faq、missing_by_challenge、student_profile、student_submissions、top_active"
+    },
+    {
+      "code": "L3-3",
+      "requirement": "完整 SKILL.md 技能包",
+      "measured": true,
+      "target": "7 个 SKILL.md",
+      "status": "pass",
+      "evidence": "demo/wechat-class-manager/skills/",
+      "note": ""
+    },
+    {
+      "code": "L3-4",
+      "requirement": "被 OpenClaw / Claude Code 实际识别并调用",
+      "measured": false,
+      "target": "runtime 实测",
+      "status": "not_met",
+      "evidence": "demo/wechat-class-manager/SKILL.md",
+      "note": "本机未安装该 runtime；仅提供标准 SKILL.md + 可独立运行 CLI"
+    },
+    {
+      "code": "L3-5",
+      "requirement": "代码托管在 GitHub",
+      "measured": false,
+      "target": "本次仓库链接",
+      "status": "not_met",
+      "evidence": "附录_真实项目证据/",
+      "note": "本次未创建/推送新仓库；历史 C5/C6A 仓库不冒充本次交付"
+    },
+    {
+      "code": "L3-6",
+      "requirement": "测试通过",
+      "measured": 0,
+      "target": "exit=0",
+      "status": "pass",
+      "evidence": "evidence/test_output.txt",
+      "note": ""
+    },
+    {
+      "code": "L4-1",
+      "requirement": "Watcher 增量处理不重复",
+      "measured": 4,
+      "target": ">=1 重复被跳过",
+      "status": "pass",
+      "evidence": "evidence/watcher_result.json",
+      "note": "本批 12 条输入中 4 条重复被跳过、8 条新增处理"
+    },
+    {
+      "code": "L4-2",
+      "requirement": "Alert 在模拟场景触发 >=3 种预警",
+      "measured": 4,
+      "target": ">=3",
+      "status": "pass",
+      "evidence": "evidence/alerts.json",
+      "note": "模拟时间点 2026-11-18"
+    },
+    {
+      "code": "L4-3",
+      "requirement": "Report 自动生成结构完整周报",
+      "measured": true,
+      "target": "6 个章节齐全",
+      "status": "pass",
+      "evidence": "evidence/weekly_report.md",
+      "note": ""
+    },
+    {
+      "code": "L4-4",
+      "requirement": "Dashboard 展示 >=5 个维度",
+      "measured": 8,
+      "target": ">=5",
+      "status": "pass",
+      "evidence": "demo/wechat-class-manager/dashboard/index.html",
+      "note": ""
+    },
+    {
+      "code": "L4-5",
+      "requirement": "系统端到端可运行 + 部署文档",
+      "measured": true,
+      "target": "pipeline exit=0",
+      "status": "pass",
+      "evidence": "demo/SETUP.md、demo/系统架构文档.md",
+      "note": ""
+    },
+    {
+      "code": "L4-6",
+      "requirement": "至少运行 1 周的真实数据演示",
+      "measured": 0,
+      "target": "真实 7 天连续运行",
+      "status": "not_met",
+      "evidence": "demo/data/README.md",
+      "note": "未接入真实数据源，无真实跨周运行记录"
+    },
+    {
+      "code": "L4-7",
+      "requirement": "双向通道（Agent 写回微信群，Wechaty）",
+      "measured": false,
+      "target": "写回能力",
+      "status": "not_met",
+      "evidence": "demo/系统架构文档.md",
+      "note": "高阶选做，本次未实现"
+    }
+  ],
+  "_honesty_note": "pass(合成数据) 表示数值达标但数据源为合成样本；所有 not_met 项均为真实未满足，不以模拟结果冒充。"
+}

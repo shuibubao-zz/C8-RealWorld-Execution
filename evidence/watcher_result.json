@@ -1,0 +1,48 @@
+{
+  "input_count": 12,
+  "new_processed": 8,
+  "duplicates_skipped": 4,
+  "duplicate_ids": [
+    "m0011",
+    "m0041",
+    "m0081",
+    "m0121"
+  ],
+  "new_ids": [
+    "m0151",
+    "m0152",
+    "m0153",
+    "m0154",
+    "m0155",
+    "m0156",
+    "m0157",
+    "m0158"
+  ],
+  "checkpoint_runs": 1,
+  "graph_counts": {
+    "nodes": {
+      "Student": 22,
+      "Challenge": 8,
+      "Submission": 8,
+      "Message": 158,
+      "QAPair": 14,
+      "Report": 0
+    },
+    "edges": {
+      "SENT": 158,
+      "TAGGED_WITH": 75,
+      "SUBMITTED": 16,
+      "PROGRESSED_TO": 8,
+      "ASKED": 14,
+      "ANSWERED": 14,
+      "MENTORED": 14
+    },
+    "total_nodes": 210,
+    "total_edges": 299
+  },
+  "intent_distribution": {
+    "discussion": 8
+  },
+  "graph": "C:\\Users\\卢怡然\\Desktop\\C8\\evidence\\graph.json",
+  "_note": "增量样本为合成数据；4 条重复 msg_id 用于验证去重。"
+}

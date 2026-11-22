@@ -1,0 +1,250 @@
+window.C8_DASHBOARD = {
+  "meta": {
+    "synthetic": true,
+    "generated_by": "report_engine.py",
+    "_note": "合成脱敏样本，非真实班级数据"
+  },
+  "dimensions": {
+    "kpi": {
+      "students": 22,
+      "challenges": 8,
+      "messages": 150,
+      "submissions": 8,
+      "qa_pairs": 14,
+      "alerts": 14
+    },
+    "intent_distribution": {
+      "announcement": 6,
+      "submission": 12,
+      "question": 14,
+      "answer": 14,
+      "resource": 9,
+      "discussion": 34,
+      "social": 61
+    },
+    "challenge_completion": [
+      {
+        "challenge": "C1",
+        "name": "课程资料获取与翻译",
+        "submitted": 1,
+        "total": 22,
+        "rate": 0.0455
+      },
+      {
+        "challenge": "C2",
+        "name": "AI for Math 论文",
+        "submitted": 1,
+        "total": 22,
+        "rate": 0.0455
+      },
+      {
+        "challenge": "C3",
+        "name": "群内高质量参与",
+        "submitted": 1,
+        "total": 22,
+        "rate": 0.0455
+      },
+      {
+        "challenge": "C4B",
+        "name": "公众号文章生成技能",
+        "submitted": 1,
+        "total": 22,
+        "rate": 0.0455
+      },
+      {
+        "challenge": "C5",
+        "name": "GitHub Repository",
+        "submitted": 1,
+        "total": 22,
+        "rate": 0.0455
+      },
+      {
+        "challenge": "C6A",
+        "name": "提交数据仪表盘",
+        "submitted": 1,
+        "total": 22,
+        "rate": 0.0455
+      },
+      {
+        "challenge": "C7",
+        "name": "内容传播",
+        "submitted": 1,
+        "total": 22,
+        "rate": 0.0455
+      },
+      {
+        "challenge": "C8",
+        "name": "真实项目落地",
+        "submitted": 1,
+        "total": 22,
+        "rate": 0.0455
+      }
+    ],
+    "top_active_students": [
+      {
+        "name": "学生04",
+        "messages": 11,
+        "questions": 1,
+        "answers": 0,
+        "submissions": 1
+      },
+      {
+        "name": "学生06",
+        "messages": 10,
+        "questions": 1,
+        "answers": 0,
+        "submissions": 1
+      },
+      {
+        "name": "学生01",
+        "messages": 8,
+        "questions": 1,
+        "answers": 1,
+        "submissions": 1
+      },
+      {
+        "name": "学生09",
+        "messages": 8,
+        "questions": 1,
+        "answers": 1,
+        "submissions": 0
+      },
+      {
+        "name": "学生12",
+        "messages": 8,
+        "questions": 1,
+        "answers": 1,
+        "submissions": 0
+      }
+    ],
+    "daily_message_trend": {
+      "2026-11-02": 150
+    },
+    "qa_topic_distribution": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4B": 2,
+      "C5": 2,
+      "C6A": 2,
+      "C7": 1,
+      "C8": 1
+    },
+    "alert_rule_counts": {
+      "deadline_warning": 1,
+      "silent_student": 0,
+      "low_submission_rate": 8,
+      "activity_drop": 1,
+      "missing_attachment": 4
+    },
+    "student_profiles": [
+      {
+        "name": "学生04",
+        "messages": 11,
+        "answers": 0,
+        "submissions": 1,
+        "skill_tags": [
+          "C2",
+          "C4B",
+          "C8"
+        ]
+      },
+      {
+        "name": "学生06",
+        "messages": 10,
+        "answers": 0,
+        "submissions": 1,
+        "skill_tags": [
+          "C2",
+          "C3",
+          "C4B",
+          "C6A"
+        ]
+      },
+      {
+        "name": "学生01",
+        "messages": 8,
+        "answers": 1,
+        "submissions": 1,
+        "skill_tags": [
+          "C1",
+          "C3",
+          "C5"
+        ]
+      },
+      {
+        "name": "学生09",
+        "messages": 8,
+        "answers": 1,
+        "submissions": 0,
+        "skill_tags": [
+          "C1",
+          "C3"
+        ]
+      },
+      {
+        "name": "学生12",
+        "messages": 8,
+        "answers": 1,
+        "submissions": 0,
+        "skill_tags": [
+          "C4B",
+          "C6A",
+          "C8"
+        ]
+      },
+      {
+        "name": "学生15",
+        "messages": 8,
+        "answers": 1,
+        "submissions": 0,
+        "skill_tags": [
+          "C5"
+        ]
+      },
+      {
+        "name": "学生03",
+        "messages": 7,
+        "answers": 0,
+        "submissions": 1,
+        "skill_tags": [
+          "C1",
+          "C3",
+          "C7"
+        ]
+      },
+      {
+        "name": "学生16",
+        "messages": 7,
+        "answers": 0,
+        "submissions": 0,
+        "skill_tags": [
+          "C6A",
+          "C8"
+        ]
+      },
+      {
+        "name": "学生02",
+        "messages": 6,
+        "answers": 1,
+        "submissions": 1,
+        "skill_tags": [
+          "C1",
+          "C2",
+          "C6A"
+        ]
+      },
+      {
+        "name": "学生07",
+        "messages": 6,
+        "answers": 0,
+        "submissions": 1,
+        "skill_tags": [
+          "C3",
+          "C7"
+        ]
+      }
+    ]
+  },
+  "dimension_count": 8
+};

@@ -1,0 +1,26 @@
+解释器：C:\Users\卢怡然\.workbuddy\binaries\python\versions\3.13.12\python.exe
+时间：2026-11-14T20:12:56
+exit=0
+
+
+[HOLDOUT] 手写变体集 accuracy=1.0000 (20/20) confusion={}
+
+test_01_schema_and_volume (test_all.C8TestCase.test_01_schema_and_volume) ... ok
+test_02_fixture_deterministic (test_all.C8TestCase.test_02_fixture_deterministic) ... ok
+test_03_classifier_accuracy_synthetic (test_all.C8TestCase.test_03_classifier_accuracy_synthetic) ... ok
+test_04_classifier_accuracy_holdout (test_all.C8TestCase.test_04_classifier_accuracy_holdout)
+独立于生成模板的 20 条手工变体，结果打印到测试输出，不隐藏。 ... ok
+test_05_challenge_linker (test_all.C8TestCase.test_05_challenge_linker) ... ok
+test_06_submission_detector (test_all.C8TestCase.test_06_submission_detector) ... ok
+test_07_qa_extractor (test_all.C8TestCase.test_07_qa_extractor) ... ok
+test_08_graph_scale_and_crud (test_all.C8TestCase.test_08_graph_scale_and_crud) ... ok
+test_09_nl_query_coverage (test_all.C8TestCase.test_09_nl_query_coverage) ... ok
+test_10_skill_assets_complete (test_all.C8TestCase.test_10_skill_assets_complete) ... ok
+test_11_watcher_incremental_dedup (test_all.C8TestCase.test_11_watcher_incremental_dedup) ... ok
+test_12_alert_rules (test_all.C8TestCase.test_12_alert_rules) ... ok
+test_13_report_and_dashboard_dimensions (test_all.C8TestCase.test_13_report_and_dashboard_dimensions) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.033s
+
+OK

@@ -1,0 +1,305 @@
+{
+  "_note": "20 条手工改写变体，独立于 scripts/gen_fixture.py 模板，用于测试分类器的非同源表现。样本量小，证据强度有限。",
+  "messages": [
+    {
+      "msg_id": "v001",
+      "timestamp": "2026-11-09T10:01:00+08:00",
+      "sender": {
+        "wechat_id": "s01",
+        "nickname": "s01"
+      },
+      "type": "text",
+      "content": "老师，C4B 的 skill 包要怎么打包才符合规范？",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v002",
+      "timestamp": "2026-11-09T10:02:00+08:00",
+      "sender": {
+        "wechat_id": "s02",
+        "nickname": "s02"
+      },
+      "type": "text",
+      "content": "我把 C5 的仓库推上去了，麻烦看下 README 有没有漏字段",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v003",
+      "timestamp": "2026-11-09T10:03:00+08:00",
+      "sender": {
+        "wechat_id": "s03",
+        "nickname": "s03"
+      },
+      "type": "file",
+      "content": "张三_C6A_dashboard.html",
+      "media_ref": "attachments/张三_C6A_dashboard.html",
+      "reply_to": null
+    },
+    {
+      "msg_id": "v004",
+      "timestamp": "2026-11-09T10:04:00+08:00",
+      "sender": {
+        "wechat_id": "t01",
+        "nickname": "t01"
+      },
+      "type": "text",
+      "content": "@全体 明天下午三点开周会，请准时参加",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v005",
+      "timestamp": "2026-11-09T10:05:00+08:00",
+      "sender": {
+        "wechat_id": "s04",
+        "nickname": "s04"
+      },
+      "type": "text",
+      "content": "这个报错是因为解释器版本不一致，先统一 venv",
+      "media_ref": "q001",
+      "reply_to": "q001"
+    },
+    {
+      "msg_id": "v006",
+      "timestamp": "2026-11-09T10:06:00+08:00",
+      "sender": {
+        "wechat_id": "s05",
+        "nickname": "s05"
+      },
+      "type": "link",
+      "content": "https://example.org/a 这个链接讲得挺清楚",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v007",
+      "timestamp": "2026-11-09T10:07:00+08:00",
+      "sender": {
+        "wechat_id": "s06",
+        "nickname": "s06"
+      },
+      "type": "text",
+      "content": "早上好",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v008",
+      "timestamp": "2026-11-09T10:08:00+08:00",
+      "sender": {
+        "wechat_id": "s07",
+        "nickname": "s07"
+      },
+      "type": "text",
+      "content": "请问 C7 的文章链接汇总要放几个平台？",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v009",
+      "timestamp": "2026-11-09T10:09:00+08:00",
+      "sender": {
+        "wechat_id": "s08",
+        "nickname": "s08"
+      },
+      "type": "text",
+      "content": "C2 论文我改成配对统计之后标准差明显小了，结论稳了很多",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v010",
+      "timestamp": "2026-11-09T10:10:00+08:00",
+      "sender": {
+        "wechat_id": "s09",
+        "nickname": "s09"
+      },
+      "type": "text",
+      "content": "收到",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v011",
+      "timestamp": "2026-11-09T10:11:00+08:00",
+      "sender": {
+        "wechat_id": "t01",
+        "nickname": "t01"
+      },
+      "type": "text",
+      "content": "@全体 通知：C8 截止 12月31日，请提前自检",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v012",
+      "timestamp": "2026-11-09T10:12:00+08:00",
+      "sender": {
+        "wechat_id": "s10",
+        "nickname": "s10"
+      },
+      "type": "file",
+      "content": "李四_C1_翻译稿.md",
+      "media_ref": "attachments/李四_C1_翻译稿.md",
+      "reply_to": null
+    },
+    {
+      "msg_id": "v013",
+      "timestamp": "2026-11-09T10:13:00+08:00",
+      "sender": {
+        "wechat_id": "s11",
+        "nickname": "s11"
+      },
+      "type": "text",
+      "content": "为什么我这边跑出来是 18/20 而不是 20/20？",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v014",
+      "timestamp": "2026-11-09T10:14:00+08:00",
+      "sender": {
+        "wechat_id": "s12",
+        "nickname": "s12"
+      },
+      "type": "text",
+      "content": "先检查 venv 和依赖状态，两个解释器结果本来就不一样",
+      "media_ref": "q002",
+      "reply_to": "q002"
+    },
+    {
+      "msg_id": "v015",
+      "timestamp": "2026-11-09T10:15:00+08:00",
+      "sender": {
+        "wechat_id": "s13",
+        "nickname": "s13"
+      },
+      "type": "text",
+      "content": "分享一个 GitHub Actions 模板 https://example.org/gha",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v016",
+      "timestamp": "2026-11-09T10:16:00+08:00",
+      "sender": {
+        "wechat_id": "s14",
+        "nickname": "s14"
+      },
+      "type": "text",
+      "content": "嗯嗯",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v017",
+      "timestamp": "2026-11-09T10:17:00+08:00",
+      "sender": {
+        "wechat_id": "s15",
+        "nickname": "s15"
+      },
+      "type": "text",
+      "content": "关于 C3 的群内参与，我觉得应该按配对方式统计增益",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v018",
+      "timestamp": "2026-11-09T10:18:00+08:00",
+      "sender": {
+        "wechat_id": "s16",
+        "nickname": "s16"
+      },
+      "type": "image",
+      "content": "[图片]",
+      "media_ref": "images/p.png",
+      "reply_to": null
+    },
+    {
+      "msg_id": "v019",
+      "timestamp": "2026-11-09T10:19:00+08:00",
+      "sender": {
+        "wechat_id": "s17",
+        "nickname": "s17"
+      },
+      "type": "text",
+      "content": "大家觉得 C6A 仪表盘要不要加一个筛选器？",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "v020",
+      "timestamp": "2026-11-09T10:20:00+08:00",
+      "sender": {
+        "wechat_id": "s18",
+        "nickname": "s18"
+      },
+      "type": "text",
+      "content": "建议加，按挑战编号筛选最实用",
+      "media_ref": "q003",
+      "reply_to": "q003"
+    }
+  ],
+  "labels": {
+    "v001": "question",
+    "v002": "discussion",
+    "v003": "submission",
+    "v004": "announcement",
+    "v005": "answer",
+    "v006": "resource",
+    "v007": "social",
+    "v008": "question",
+    "v009": "discussion",
+    "v010": "social",
+    "v011": "announcement",
+    "v012": "submission",
+    "v013": "question",
+    "v014": "answer",
+    "v015": "resource",
+    "v016": "social",
+    "v017": "discussion",
+    "v018": "social",
+    "v019": "question",
+    "v020": "answer"
+  },
+  "anchor_questions": [
+    {
+      "msg_id": "q001",
+      "timestamp": "2026-11-09T09:00:00+08:00",
+      "sender": {
+        "wechat_id": "s00",
+        "nickname": "学生00"
+      },
+      "type": "text",
+      "content": "请问这个要怎么处理？",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "q002",
+      "timestamp": "2026-11-09T09:00:00+08:00",
+      "sender": {
+        "wechat_id": "s00",
+        "nickname": "学生00"
+      },
+      "type": "text",
+      "content": "请问这个要怎么处理？",
+      "media_ref": null,
+      "reply_to": null
+    },
+    {
+      "msg_id": "q003",
+      "timestamp": "2026-11-09T09:00:00+08:00",
+      "sender": {
+        "wechat_id": "s00",
+        "nickname": "学生00"
+      },
+      "type": "text",
+      "content": "请问这个要怎么处理？",
+      "media_ref": null,
+      "reply_to": null
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "submissions": [
+    {
+      "submission_id": "SUB-001",
+      "student": "学生01",
+      "wechat_id": "s01",
+      "challenge": "C1",
+      "challenge_ref_from_linker": "C1",
+      "timestamp": "2026-11-02T09:29:00+08:00",
+      "files": [
+        {
+          "name": "学生01_C1_proposal.md",
+          "type": "md",
+          "path": "attachments/学生01_C1_proposal.md"
+        }
+      ],
+      "level_claimed": null,
+      "level_note": "样本文件名未声明等级，未做推断",
+      "status": "received",
+      "msg_ids": [
+        "m0007"
+      ],
+      "attachments_found": [
+        "学生01_C1_AI日志.md"
+      ],
+      "missing_items": [],
+      "complete": true
+    },
+    {
+      "submission_id": "SUB-002",
+      "student": "学生02",
+      "wechat_id": "s02",
+      "challenge": "C2",
+      "challenge_ref_from_linker": "C2",
+      "timestamp": "2026-11-02T09:31:00+08:00",
+      "files": [
+        {
+          "name": "学生02_C2_论文.md",
+          "type": "md",
+          "path": "attachments/学生02_C2_论文.md"
+        }
+      ],
+      "level_claimed": null,
+      "level_note": "样本文件名未声明等级，未做推断",
+      "status": "received",
+      "msg_ids": [
+        "m0008"
+      ],
+      "attachments_found": [
+        "学生02_C2_AI日志.md"
+      ],
+      "missing_items": [],
+      "complete": true
+    },
+    {
+      "submission_id": "SUB-003",
+      "student": "学生03",
+      "wechat_id": "s03",
+      "challenge": "C3",
+      "challenge_ref_from_linker": "C3",
+      "timestamp": "2026-11-02T09:35:00+08:00",
+      "files": [
+        {
+          "name": "学生03_C3_参与记录.md",
+          "type": "md",
+          "path": "attachments/学生03_C3_参与记录.md"
+        }
+      ],
+      "level_claimed": null,
+      "level_note": "样本文件名未声明等级，未做推断",
+      "status": "received",
+      "msg_ids": [
+        "m0009"
+      ],
+      "attachments_found": [
+        "学生03_C3_AI日志.md"
+      ],
+      "missing_items": [],
+      "complete": true
+    },
+    {
+      "submission_id": "SUB-004",
+      "student": "学生04",
+      "wechat_id": "s04",
+      "challenge": "C4B",
+      "challenge_ref_from_linker": "C4B",
+      "timestamp": "2026-11-02T09:36:00+08:00",
+      "files": [
+        {
+          "name": "学生04_C4B_wechat-publisher.md",
+          "type": "md",
+          "path": "attachments/学生04_C4B_wechat-publisher.md"
+        }
+      ],
+      "level_claimed": null,
+      "level_note": "样本文件名未声明等级，未做推断",
+      "status": "received",
+      "msg_ids": [
+        "m0010"
+      ],
+      "attachments_found": [
+        "学生04_C4B_AI日志.md"
+      ],
+      "missing_items": [],
+      "complete": true
+    },
+    {
+      "submission_id": "SUB-005",
+      "student": "学生05",
+      "wechat_id": "s05",
+      "challenge": "C5",
+      "challenge_ref_from_linker": "C5",
+      "timestamp": "2026-11-02T09:40:00+08:00",
+      "files": [
+        {
+          "name": "学生05_C5_repo链接.md",
+          "type": "md",
+          "path": "attachments/学生05_C5_repo链接.md"
+        }
+      ],
+      "level_claimed": null,
+      "level_note": "样本文件名未声明等级，未做推断",
+      "status": "received",
+      "msg_ids": [
+        "m0011"
+      ],
+      "attachments_found": [],
+      "missing_items": [
+        "AI日志"
+      ],
+      "complete": false
+    },
+    {
+      "submission_id": "SUB-006",
+      "student": "学生06",
+      "wechat_id": "s06",
+      "challenge": "C6A",
+      "challenge_ref_from_linker": "C6A",
+      "timestamp": "2026-11-02T09:47:00+08:00",
+      "files": [
+        {
+          "name": "学生06_C6A_dashboard.md",
+          "type": "md",
+          "path": "attachments/学生06_C6A_dashboard.md"
+        }
+      ],
+      "level_claimed": null,
+      "level_note": "样本文件名未声明等级，未做推断",
+      "status": "received",
+      "msg_ids": [
+        "m0012"
+      ],
+      "attachments_found": [],
+      "missing_items": [
+        "AI日志"
+      ],
+      "complete": false
+    },
+    {
+      "submission_id": "SUB-007",
+      "student": "学生07",
+      "wechat_id": "s07",
+      "challenge": "C7",
+      "challenge_ref_from_linker": "C7",
+      "timestamp": "2026-11-02T09:54:00+08:00",
+      "files": [
+        {
+          "name": "学生07_C7_文章链接汇总.md",
+          "type": "md",
+          "path": "attachments/学生07_C7_文章链接汇总.md"
+        }
+      ],
+      "level_claimed": null,
+      "level_note": "样本文件名未声明等级，未做推断",
+      "status": "received",
+      "msg_ids": [
+        "m0013"
+      ],
+      "attachments_found": [],
+      "missing_items": [
+        "AI日志"
+      ],
+      "complete": false
+    },
+    {
+      "submission_id": "SUB-008",
+      "student": "学生08",
+      "wechat_id": "s08",
+      "challenge": "C8",
+      "challenge_ref_from_linker": "C8",
+      "timestamp": "2026-11-02T09:56:00+08:00",
+      "files": [
+        {
+          "name": "学生08_C8_proposal.md",
+          "type": "md",
+          "path": "attachments/学生08_C8_proposal.md"
+        }
+      ],
+      "level_claimed": null,
+      "level_note": "样本文件名未声明等级，未做推断",
+      "status": "received",
+      "msg_ids": [
+        "m0014"
+      ],
+      "attachments_found": [],
+      "missing_items": [
+        "AI日志"
+      ],
+      "complete": false
+    }
+  ],
+  "matrix": {
+    "学生01": {
+      "C1": "complete"
+    },
+    "学生02": {
+      "C2": "complete"
+    },
+    "学生03": {
+      "C3": "complete"
+    },
+    "学生04": {
+      "C4B": "complete"
+    },
+    "学生05": {
+      "C5": "incomplete"
+    },
+    "学生06": {
+      "C6A": "incomplete"
+    },
+    "学生07": {
+      "C7": "incomplete"
+    },
+    "学生08": {
+      "C8": "incomplete"
+    }
+  },
+  "missing": [
+    {
+      "student": "学生05",
+      "challenge": "C5",
+      "item": "AI日志",
+      "submission_id": "SUB-005"
+    },
+    {
+      "student": "学生06",
+      "challenge": "C6A",
+      "item": "AI日志",
+      "submission_id": "SUB-006"
+    },
+    {
+      "student": "学生07",
+      "challenge": "C7",
+      "item": "AI日志",
+      "submission_id": "SUB-007"
+    },
+    {
+      "student": "学生08",
+      "challenge": "C8",
+      "item": "AI日志",
+      "submission_id": "SUB-008"
+    }
+  ],
+  "alerts": [
+    {
+      "type": "missing_attachment",
+      "student": "学生05",
+      "challenge": "C5",
+      "item": "AI日志",
+      "message": "学生05 的 C5 提交缺少 AI日志"
+    },
+    {
+      "type": "missing_attachment",
+      "student": "学生06",
+      "challenge": "C6A",
+      "item": "AI日志",
+      "message": "学生06 的 C6A 提交缺少 AI日志"
+    },
+    {
+      "type": "missing_attachment",
+      "student": "学生07",
+      "challenge": "C7",
+      "item": "AI日志",
+      "message": "学生07 的 C7 提交缺少 AI日志"
+    },
+    {
+      "type": "missing_attachment",
+      "student": "学生08",
+      "challenge": "C8",
+      "item": "AI日志",
+      "message": "学生08 的 C8 提交缺少 AI日志"
+    }
+  ],
+  "skipped": [],
+  "stats": {
+    "submission_events": 8,
+    "complete": 4,
+    "incomplete": 4,
+    "students": 8,
+    "challenges": 8,
+    "attachments_merged": 4,
+    "files_skipped": 0,
+    "by_challenge": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 1,
+      "C4B": 1,
+      "C5": 1,
+      "C6A": 1,
+      "C7": 1,
+      "C8": 1
+    }
+  }
+}

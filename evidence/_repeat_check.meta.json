@@ -1,0 +1,21 @@
+{
+  "source": "synthetic",
+  "synthetic": true,
+  "note": "固定种子 20261114 生成的合成脱敏样本，非真实微信数据",
+  "group": "Elite20-示例群（合成）",
+  "days": 7,
+  "count": 150,
+  "type_distribution": {
+    "text": 116,
+    "file": 12,
+    "link": 9,
+    "image": 6,
+    "voice": 4,
+    "system": 3
+  },
+  "time_range": [
+    "2026-11-02T09:01:00+08:00",
+    "2026-11-02T17:59:00+08:00"
+  ],
+  "generated_by": "wechat_bridge.py"
+}

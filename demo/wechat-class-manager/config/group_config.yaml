@@ -1,0 +1,105 @@
+{
+  "group_name": "Elite20-示例群（合成）",
+  "synthetic": true,
+  "_privacy_note": "本次交付未读取/未解密任何真实微信聊天记录。此配置中的学生均为合成占位名。",
+  "mentors": [
+    "t01"
+  ],
+  "students": [
+    {
+      "wechat_id": "s01",
+      "nickname": "学生01"
+    },
+    {
+      "wechat_id": "s02",
+      "nickname": "学生02"
+    },
+    {
+      "wechat_id": "s03",
+      "nickname": "学生03"
+    },
+    {
+      "wechat_id": "s04",
+      "nickname": "学生04"
+    },
+    {
+      "wechat_id": "s05",
+      "nickname": "学生05"
+    },
+    {
+      "wechat_id": "s06",
+      "nickname": "学生06"
+    },
+    {
+      "wechat_id": "s07",
+      "nickname": "学生07"
+    },
+    {
+      "wechat_id": "s08",
+      "nickname": "学生08"
+    },
+    {
+      "wechat_id": "s09",
+      "nickname": "学生09"
+    },
+    {
+      "wechat_id": "s10",
+      "nickname": "学生10"
+    },
+    {
+      "wechat_id": "s11",
+      "nickname": "学生11"
+    },
+    {
+      "wechat_id": "s12",
+      "nickname": "学生12"
+    },
+    {
+      "wechat_id": "s13",
+      "nickname": "学生13"
+    },
+    {
+      "wechat_id": "s14",
+      "nickname": "学生14"
+    },
+    {
+      "wechat_id": "s15",
+      "nickname": "学生15"
+    },
+    {
+      "wechat_id": "s16",
+      "nickname": "学生16"
+    },
+    {
+      "wechat_id": "s17",
+      "nickname": "学生17"
+    },
+    {
+      "wechat_id": "s18",
+      "nickname": "学生18"
+    },
+    {
+      "wechat_id": "s19",
+      "nickname": "学生19"
+    },
+    {
+      "wechat_id": "s20",
+      "nickname": "学生20"
+    },
+    {
+      "wechat_id": "s21",
+      "nickname": "学生21"
+    },
+    {
+      "wechat_id": "s22",
+      "nickname": "学生22"
+    }
+  ],
+  "checkpoint_file": "state/checkpoint.json",
+  "alert_rules": {
+    "deadline_days": 3,
+    "silent_days": 7,
+    "submission_rate_threshold": 0.3
+  },
+  "data_source": "synthetic (seed 20261114)"
+}

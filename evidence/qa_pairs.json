@@ -1,0 +1,221 @@
+{
+  "pairs": [
+    {
+      "question_id": "m0019",
+      "question": "请问 C1 的提交文件命名必须严格按模板吗？",
+      "asked_by": "学生01",
+      "answer_id": "m0020",
+      "answer": "命名要严格按模板，文件通配匹配不上会被判缺失。",
+      "answered_by": "导师",
+      "timestamp": "2026-11-02T10:16:00+08:00",
+      "topic_tags": [
+        "C1"
+      ],
+      "quality_score": 0.8,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0021",
+      "question": "C2 的 AI 日志要写到什么颗粒度才算合格？",
+      "asked_by": "学生04",
+      "answer_id": "m0022",
+      "answer": "AI 日志写清楚每轮指令、改了什么、为什么改，最好附上失败尝试。",
+      "answered_by": "学生09",
+      "timestamp": "2026-11-02T10:27:00+08:00",
+      "topic_tags": [
+        "C2"
+      ],
+      "quality_score": 0.6,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0023",
+      "question": "为什么我的 C3 自检器跑出来和示例数字对不上？",
+      "asked_by": "学生07",
+      "answer_id": "m0024",
+      "answer": "先核对解释器和依赖版本，数字口径不一致最常见的原因就是这个。",
+      "answered_by": "学生12",
+      "timestamp": "2026-11-02T10:38:00+08:00",
+      "topic_tags": [
+        "C3"
+      ],
+      "quality_score": 0.8,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0025",
+      "question": "怎么在 C4B 里复现别人的实验结果？",
+      "asked_by": "学生10",
+      "answer_id": "m0026",
+      "answer": "从 README 的安装步骤开始，一步步跑，把输出和预期逐条对。",
+      "answered_by": "学生15",
+      "timestamp": "2026-11-02T10:50:00+08:00",
+      "topic_tags": [
+        "C4B"
+      ],
+      "quality_score": 0.6,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0027",
+      "question": "C5 的拿来说明至少要列几个参考来源？",
+      "asked_by": "学生13",
+      "answer_id": "m0028",
+      "answer": "检查清单写的是至少 3 个来源，而且每个要有取舍分析。",
+      "answered_by": "导师",
+      "timestamp": "2026-11-02T10:58:00+08:00",
+      "topic_tags": [
+        "C5"
+      ],
+      "quality_score": 0.8,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0029",
+      "question": "请问 C6A 的提交文件命名必须严格按模板吗？",
+      "asked_by": "学生16",
+      "answer_id": "m0030",
+      "answer": "命名要严格按模板，文件通配匹配不上会被判缺失。",
+      "answered_by": "学生21",
+      "timestamp": "2026-11-02T11:07:00+08:00",
+      "topic_tags": [
+        "C6A"
+      ],
+      "quality_score": 0.8,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0031",
+      "question": "C7 的 AI 日志要写到什么颗粒度才算合格？",
+      "asked_by": "学生19",
+      "answer_id": "m0032",
+      "answer": "AI 日志写清楚每轮指令、改了什么、为什么改，最好附上失败尝试。",
+      "answered_by": "学生02",
+      "timestamp": "2026-11-02T11:11:00+08:00",
+      "topic_tags": [
+        "C7"
+      ],
+      "quality_score": 0.6,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0033",
+      "question": "为什么我的 C8 自检器跑出来和示例数字对不上？",
+      "asked_by": "学生22",
+      "answer_id": "m0034",
+      "answer": "先核对解释器和依赖版本，数字口径不一致最常见的原因就是这个。",
+      "answered_by": "学生05",
+      "timestamp": "2026-11-02T11:17:00+08:00",
+      "topic_tags": [
+        "C8"
+      ],
+      "quality_score": 0.8,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0035",
+      "question": "怎么在 C1 里复现别人的实验结果？",
+      "asked_by": "学生03",
+      "answer_id": "m0036",
+      "answer": "从 README 的安装步骤开始，一步步跑，把输出和预期逐条对。",
+      "answered_by": "导师",
+      "timestamp": "2026-11-02T11:28:00+08:00",
+      "topic_tags": [
+        "C1"
+      ],
+      "quality_score": 0.6,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0037",
+      "question": "C2 的拿来说明至少要列几个参考来源？",
+      "asked_by": "学生06",
+      "answer_id": "m0038",
+      "answer": "检查清单写的是至少 3 个来源，而且每个要有取舍分析。",
+      "answered_by": "学生11",
+      "timestamp": "2026-11-02T11:35:00+08:00",
+      "topic_tags": [
+        "C2"
+      ],
+      "quality_score": 0.8,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0039",
+      "question": "请问 C3 的提交文件命名必须严格按模板吗？",
+      "asked_by": "学生09",
+      "answer_id": "m0040",
+      "answer": "命名要严格按模板，文件通配匹配不上会被判缺失。",
+      "answered_by": "学生14",
+      "timestamp": "2026-11-02T11:45:00+08:00",
+      "topic_tags": [
+        "C3"
+      ],
+      "quality_score": 0.8,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0041",
+      "question": "C4B 的 AI 日志要写到什么颗粒度才算合格？",
+      "asked_by": "学生12",
+      "answer_id": "m0042",
+      "answer": "AI 日志写清楚每轮指令、改了什么、为什么改，最好附上失败尝试。",
+      "answered_by": "学生17",
+      "timestamp": "2026-11-02T11:51:00+08:00",
+      "topic_tags": [
+        "C4B"
+      ],
+      "quality_score": 0.6,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0043",
+      "question": "为什么我的 C5 自检器跑出来和示例数字对不上？",
+      "asked_by": "学生15",
+      "answer_id": "m0044",
+      "answer": "先核对解释器和依赖版本，数字口径不一致最常见的原因就是这个。",
+      "answered_by": "导师",
+      "timestamp": "2026-11-02T11:58:00+08:00",
+      "topic_tags": [
+        "C5"
+      ],
+      "quality_score": 0.8,
+      "matched_by": "reply_to"
+    },
+    {
+      "question_id": "m0045",
+      "question": "怎么在 C6A 里复现别人的实验结果？",
+      "asked_by": "学生18",
+      "answer_id": "m0046",
+      "answer": "从 README 的安装步骤开始，一步步跑，把输出和预期逐条对。",
+      "answered_by": "学生01",
+      "timestamp": "2026-11-02T12:11:00+08:00",
+      "topic_tags": [
+        "C6A"
+      ],
+      "quality_score": 0.6,
+      "matched_by": "reply_to"
+    }
+  ],
+  "stats": {
+    "pairs": 14,
+    "questions": 14,
+    "answers": 14,
+    "matched_by": {
+      "reply_to": 14
+    },
+    "avg_quality": 0.714,
+    "topics": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4B": 2,
+      "C5": 2,
+      "C6A": 2,
+      "C7": 1,
+      "C8": 1
+    },
+    "window_minutes": 30
+  },
+  "quality_formula": "0.35 基础 + 0.25(答案长度>=15) + 0.20(含解释性措辞) + 0.20(问答共享挑战标签)；上限 1.0。启发式打分，非模型评分。"
+}

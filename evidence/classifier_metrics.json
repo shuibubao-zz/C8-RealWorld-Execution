@@ -1,0 +1,56 @@
+{
+  "rows": 150,
+  "intent_distribution": {
+    "submission": 12,
+    "question": 14,
+    "answer": 14,
+    "discussion": 34,
+    "announcement": 6,
+    "resource": 9,
+    "social": 61
+  },
+  "evaluation": {
+    "total": 150,
+    "correct": 150,
+    "accuracy": 1.0,
+    "per_intent": {
+      "announcement": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "answer": {
+        "correct": 14,
+        "total": 14,
+        "accuracy": 1.0
+      },
+      "discussion": {
+        "correct": 34,
+        "total": 34,
+        "accuracy": 1.0
+      },
+      "question": {
+        "correct": 14,
+        "total": 14,
+        "accuracy": 1.0
+      },
+      "resource": {
+        "correct": 9,
+        "total": 9,
+        "accuracy": 1.0
+      },
+      "social": {
+        "correct": 61,
+        "total": 61,
+        "accuracy": 1.0
+      },
+      "submission": {
+        "correct": 12,
+        "total": 12,
+        "accuracy": 1.0
+      }
+    },
+    "confusion": {}
+  },
+  "evaluation_note": "合成集标签与规则同源，此准确率仅证明实现自洽；手写变体集结果见 tests/test_all.py 与 evidence/验收记录.md"
+}

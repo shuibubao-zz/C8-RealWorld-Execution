@@ -1,0 +1,916 @@
+{
+  "rows": 150,
+  "distribution": {
+    "C1": 12,
+    "C4B": 10,
+    "C6A": 9,
+    "C7": 8,
+    "C8": 8,
+    "C5": 9,
+    "C2": 10,
+    "C3": 9,
+    "(none)": 75
+  },
+  "refs": [
+    {
+      "msg_id": "m0001",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0002",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0003",
+      "challenge_ref": "C6A",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0004",
+      "challenge_ref": "C7",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0005",
+      "challenge_ref": "C8",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0006",
+      "challenge_ref": "C5",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0007",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0008",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0009",
+      "challenge_ref": "C3",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0010",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0011",
+      "challenge_ref": "C5",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0012",
+      "challenge_ref": "C6A",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0013",
+      "challenge_ref": "C7",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0014",
+      "challenge_ref": "C8",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0015",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0016",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0017",
+      "challenge_ref": "C3",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0018",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0019",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0020",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0021",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0022",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0023",
+      "challenge_ref": "C3",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0024",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0025",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0026",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0027",
+      "challenge_ref": "C5",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0028",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0029",
+      "challenge_ref": "C6A",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0030",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0031",
+      "challenge_ref": "C7",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0032",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0033",
+      "challenge_ref": "C8",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0034",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0035",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0036",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0037",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0038",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0039",
+      "challenge_ref": "C3",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0040",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0041",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0042",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0043",
+      "challenge_ref": "C5",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0044",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0045",
+      "challenge_ref": "C6A",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0046",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0047",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0048",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0049",
+      "challenge_ref": "C3",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0050",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0051",
+      "challenge_ref": "C5",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0052",
+      "challenge_ref": "C6A",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0053",
+      "challenge_ref": "C7",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0054",
+      "challenge_ref": "C8",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0055",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0056",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0057",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0058",
+      "challenge_ref": "C3",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0059",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0060",
+      "challenge_ref": "C5",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0061",
+      "challenge_ref": "C6A",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0062",
+      "challenge_ref": "C7",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0063",
+      "challenge_ref": "C8",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0064",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0065",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0066",
+      "challenge_ref": "C3",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0067",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0068",
+      "challenge_ref": "C5",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0069",
+      "challenge_ref": "C6A",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0070",
+      "challenge_ref": "C7",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0071",
+      "challenge_ref": "C8",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0072",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0073",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0074",
+      "challenge_ref": "C3",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0075",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0076",
+      "challenge_ref": "C5",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0077",
+      "challenge_ref": "C6A",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0078",
+      "challenge_ref": "C7",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0079",
+      "challenge_ref": "C8",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0080",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0081",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0082",
+      "challenge_ref": "C3",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0083",
+      "challenge_ref": "C4B",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0084",
+      "challenge_ref": "C5",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0085",
+      "challenge_ref": "C6A",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0086",
+      "challenge_ref": "C7",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0087",
+      "challenge_ref": "C8",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0088",
+      "challenge_ref": "C1",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0089",
+      "challenge_ref": "C2",
+      "confidence": 0.95,
+      "reason": "编号精确匹配"
+    },
+    {
+      "msg_id": "m0090",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0091",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0092",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0093",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0094",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0095",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0096",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0097",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0098",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0099",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0100",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0101",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0102",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0103",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0104",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0105",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0106",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0107",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0108",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0109",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0110",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0111",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0112",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0113",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0114",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0115",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0116",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0117",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0118",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0119",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0120",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0121",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0122",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0123",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0124",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0125",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0126",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0127",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0128",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0129",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0130",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0131",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0132",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0133",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0134",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0135",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0136",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0137",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0138",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0139",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0140",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0141",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0142",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0143",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0144",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0145",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0146",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0147",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0148",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0149",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    },
+    {
+      "msg_id": "m0150",
+      "challenge_ref": null,
+      "confidence": 0.0,
+      "reason": "未命中"
+    }
+  ]
+}

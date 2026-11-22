@@ -1,0 +1,158 @@
+{
+  "graph": "C:\\Users\\卢怡然\\Desktop\\C8\\evidence\\graph.json",
+  "query_count": 6,
+  "intent_coverage": [
+    "class_summary",
+    "faq",
+    "missing_by_challenge",
+    "student_profile",
+    "student_submissions",
+    "top_active"
+  ],
+  "results": [
+    {
+      "query": "学生03 提交了哪些挑战？",
+      "intent": "student_submissions",
+      "data": [
+        {
+          "challenge": "C3",
+          "status": "received",
+          "complete": true,
+          "files": [
+            "学生03_C3_参与记录.md"
+          ]
+        }
+      ],
+      "answer": "学生03 共提交 1 项：C3(完整)"
+    },
+    {
+      "query": "C4B 还有谁没交？",
+      "intent": "missing_by_challenge",
+      "data": {
+        "challenge": "C4B",
+        "submitted_count": 1,
+        "missing_count": 22,
+        "missing": [
+          "学生01",
+          "学生02",
+          "学生03",
+          "学生04",
+          "学生05",
+          "学生06",
+          "学生07",
+          "学生08",
+          "学生09",
+          "学生10",
+          "学生11",
+          "学生12",
+          "学生13",
+          "学生14",
+          "学生15",
+          "学生16",
+          "学生17",
+          "学生18",
+          "学生19",
+          "学生20",
+          "学生21",
+          "学生22"
+        ]
+      },
+      "answer": "C4B 已提交 1 人，未提交 22 人。未提交名单（前 30）：学生01、学生02、学生03、学生04、学生05、学生06、学生07、学生08、学生09、学生10、学生11、学生12、学生13、学生14、学生15、学生16、学生17、学生18、学生19、学生20、学生21、学生22"
+    },
+    {
+      "query": "最近一周谁最活跃？",
+      "intent": "top_active",
+      "data": [
+        {
+          "name": "学生04",
+          "messages": 11,
+          "answers": 0
+        },
+        {
+          "name": "学生06",
+          "messages": 10,
+          "answers": 0
+        },
+        {
+          "name": "学生01",
+          "messages": 8,
+          "answers": 1
+        },
+        {
+          "name": "学生09",
+          "messages": 8,
+          "answers": 1
+        },
+        {
+          "name": "学生12",
+          "messages": 8,
+          "answers": 1
+        }
+      ],
+      "answer": "发言量 Top5：学生04 11 条；学生06 10 条；学生01 8 条；学生09 8 条；学生12 8 条"
+    },
+    {
+      "query": "关于 C5 的常见问题有哪些？",
+      "intent": "faq",
+      "data": [
+        {
+          "id": "QA-005",
+          "question": "C5 的拿来说明至少要列几个参考来源？",
+          "answer": "检查清单写的是至少 3 个来源，而且每个要有取舍分析。",
+          "score": 0.8
+        },
+        {
+          "id": "QA-013",
+          "question": "为什么我的 C5 自检器跑出来和示例数字对不上？",
+          "answer": "先核对解释器和依赖版本，数字口径不一致最常见的原因就是这个。",
+          "score": 0.8
+        }
+      ],
+      "answer": "检索到 2 条相关 Q&A，质量最高的 3 条：\n- Q: C5 的拿来说明至少要列几个参考来源？\n  A: 检查清单写的是至少 3 个来源，而且每个要有取舍分析。\n- Q: 为什么我的 C5 自检器跑出来和示例数字对不上？\n  A: 先核对解释器和依赖版本，数字口径不一致最常见的原因就是这个。"
+    },
+    {
+      "query": "学生01 的画像是什么？",
+      "intent": "student_profile",
+      "data": {
+        "wechat_id": "s01",
+        "nickname": "学生01",
+        "major": "",
+        "enrollment_date": null,
+        "skill_tags": [
+          "C1",
+          "C3",
+          "C5"
+        ],
+        "message_count": 8,
+        "question_count": 1,
+        "answer_count": 1,
+        "submission_count": 1,
+        "last_active": "2026-11-02T16:39:00+08:00",
+        "_profile_note": "画像由群互动统计推断，不是心理测评；仅用于教学管理辅助。",
+        "_key": "s01"
+      },
+      "answer": "学生01：发言 8 条，提问 1 次，回答 1 次，提交 1 项，关联挑战标签 C1、C3、C5。画像由群互动统计推断，不是心理测评；仅用于教学管理辅助。"
+    },
+    {
+      "query": "这周班级状态如何？",
+      "intent": "class_summary",
+      "data": {
+        "students": 22,
+        "challenges": 8,
+        "submissions": 8,
+        "qa_pairs": 14,
+        "messages": 150,
+        "intent_distribution": {
+          "announcement": 6,
+          "submission": 12,
+          "question": 14,
+          "answer": 14,
+          "resource": 9,
+          "discussion": 34,
+          "social": 61
+        }
+      },
+      "answer": "班级状态：22 名学生、8 个挑战、150 条消息、8 次提交、14 条 Q&A；消息意图分布 {'announcement': 6, 'submission': 12, 'question': 14, 'answer': 14, 'resource': 9, 'discussion': 34, 'social': 61}。（数据为合成脱敏样本）"
+    }
+  ]
+}

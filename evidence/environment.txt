@@ -1,0 +1,16 @@
+C8 运行与验收环境（复跑必读）
+
+解释器      : C:\Users\卢怡然\.workbuddy\binaries\python\versions\3.13.12\python.exe
+Python 版本 : 3.13.14
+操作系统    : Windows-11-10.0.26200-SP0
+运行时间    : 2026-11-14T20:12:56
+工作目录    : C:\Users\卢怡然\Desktop\C8\demo
+交付系统依赖: 零第三方依赖（仅标准库）
+资料读取依赖: 读取挑战 PDF 时临时安装过 pypdf 7.1.0 到工作区临时目录，
+              该库不属于交付系统依赖，C8/ 内不含也不需它。
+配置文件    : *.yaml 使用 JSON 语法（YAML 1.2 子集），无需 PyYAML。
+数据源      : 合成脱敏样本（seed 20261114），未使用真实微信数据。
+
+复跑命令：
+  "C:\Users\卢怡然\.workbuddy\binaries\python\versions\3.13.12\python.exe" demo/run_pipeline.py
+  "C:\Users\卢怡然\.workbuddy\binaries\python\versions\3.13.12\python.exe" -m unittest discover -s demo/wechat-class-manager/tests -v

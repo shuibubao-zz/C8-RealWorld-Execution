@@ -1,0 +1,54 @@
+{
+  "_format_note": "JSON 语法的 YAML（YAML 1.2 子集），无需 PyYAML。",
+  "title": "Class Management Property Graph (Domain Model First)",
+  "node_types": {
+    "Student": [
+      "name",
+      "wechat_id",
+      "major",
+      "enrollment_date",
+      "skill_tags"
+    ],
+    "Challenge": [
+      "id",
+      "name_cn",
+      "name_en",
+      "due_date",
+      "levels"
+    ],
+    "Submission": [
+      "timestamp",
+      "files",
+      "level_claimed",
+      "status"
+    ],
+    "Message": [
+      "timestamp",
+      "content",
+      "type",
+      "wechat_msg_id",
+      "intent"
+    ],
+    "QAPair": [
+      "question",
+      "answer",
+      "topic_tags",
+      "quality_score"
+    ],
+    "Report": [
+      "type",
+      "generated_at",
+      "data_snapshot"
+    ]
+  },
+  "edge_types": {
+    "SUBMITTED": "Student -> Submission -> Challenge",
+    "SENT": "Student -> Message",
+    "ASKED": "Student -> QAPair",
+    "ANSWERED": "Student -> QAPair",
+    "MENTORED": "Student -> Student (由回复关系推断)",
+    "PROGRESSED_TO": "Student -> Challenge.Level",
+    "TAGGED_WITH": "Message -> Challenge"
+  },
+  "storage_backend": "纯标准库 dict + JSON 持久化（对应任务书 'NetworkX -> JSON export' 的零依赖实现）"
+}

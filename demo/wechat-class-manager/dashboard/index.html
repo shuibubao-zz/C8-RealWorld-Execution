@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elite20 班级管理看板 · C8 Level 4</title>
+<style>
+  :root{--bg:#f7f8fa;--card:#fff;--ink:#1f2430;--muted:#6b7280;--line:#e5e7eb;
+        --blue:#2563eb;--green:#15803d;--amber:#b45309;--red:#b91c1c;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:14px/1.6 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;padding:28px}
+  .wrap{max-width:1160px;margin:0 auto}
+  header{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+  h1{font-size:22px;margin:0}
+  .note{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;
+        padding:10px 14px;border-radius:8px;font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;
+        box-shadow:0 1px 2px rgba(16,24,40,.04)}
+  .card h2{font-size:14px;margin:0 0 12px;color:var(--muted);font-weight:600;letter-spacing:.02em}
+  .kpi{font-size:28px;font-weight:700;line-height:1.2}
+  .kpi small{display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:4px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:6px 4px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600}
+  .bar{height:9px;background:#eef2f7;border-radius:5px;overflow:hidden;min-width:90px}
+  .bar > i{display:block;height:100%;background:var(--blue);border-radius:5px}
+  .tag{display:inline-block;background:#eff6ff;color:#1d4ed8;border-radius:4px;
+       padding:1px 7px;margin:2px 3px 2px 0;font-size:12px}
+  .row{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:13px}
+  .row .label{width:86px;color:var(--muted);flex:none}
+  .row .val{width:52px;text-align:right;flex:none;font-variant-numeric:tabular-nums}
+  .wide{grid-column:1/-1}
+  footer{color:var(--muted);font-size:12px;margin-top:22px;text-align:center}
+  .pill{font-size:12px;padding:2px 9px;border-radius:99px;background:#eef2ff;color:#4338ca}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Elite20 班级管理看板 <span class="pill">C8 · Level 4</span></h1>
+    <span style="color:var(--muted);font-size:12px">本地静态页 · 零外部依赖 · 双击即可打开</span>
+  </header>
+  <div class="note">
+    数据来源为<strong>合成脱敏样本</strong>，不是真实微信群记录。本机未解密、未读取任何真实聊天数据；
+    本页用于验证「看板可展示 ≥5 个维度」这一工程验收点。
+  </div>
+  <div class="grid" id="app"></div>
+  <footer>由 demo/wechat-class-manager/report_engine.py 生成 dashboard_data.js · 数字可用 evidence/sha256.txt 复核</footer>
+</div>
+<script src="dashboard_data.js"></script>
+<script>
+(function(){
+  var d = window.C8_DASHBOARD;
+  var app = document.getElementById('app');
+  if(!d){app.innerHTML='<div class="card wide">未找到 dashboard_data.js，请先运行 report_engine.py</div>';return;}
+  var x = d.dimensions, html = [];
+  function card(title, body, wide){html.push('<div class="card'+(wide?' wide':'')+'"><h2>'+title+'</h2>'+body+'</div>');}
+  function esc(s){return String(s==null?'-':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+
+  var k = x.kpi;
+  [['学生数',k.students],['挑战数',k.challenges],['消息数',k.messages],
+   ['提交数',k.submissions],['Q&A 对',k.qa_pairs],['预警数',k.alerts]].forEach(function(p){
+    card(p[0], '<div class="kpi">'+p[1]+'</div>');
+  });
+
+  var s1 = '<table><tr><th>意图</th><th>条数</th><th>占比</th></tr>';
+  var tot = Object.values(x.intent_distribution).reduce(function(a,b){return a+b;},0)||1;
+  Object.entries(x.intent_distribution).sort(function(a,b){return b[1]-a[1];}).forEach(function(e){
+    s1 += '<tr><td>'+esc(e[0])+'</td><td>'+e[1]+'</td><td><div class="bar"><i style="width:'+
+          (e[1]/tot*100).toFixed(1)+'%"></i></div></td></tr>';});
+  card('① 消息意图分布', s1+'</table>');
+
+  var s2 = '<table><tr><th>挑战</th><th>名称</th><th>完成率</th><th>提交/总人数</th></tr>';
+  x.challenge_completion.forEach(function(c){
+    s2 += '<tr><td><strong>'+esc(c.challenge)+'</strong></td><td>'+esc(c.name)+'</td>'+
+          '<td><div class="bar"><i style="width:'+(c.rate*100).toFixed(1)+'%"></i></div></td>'+
+          '<td>'+c.submitted+' / '+c.total+'</td></tr>';});
+  card('② 各挑战完成率', s2+'</table>', true);
+
+  var s3 = '<table><tr><th>#</th><th>学生</th><th>发言</th><th>提问</th><th>回答</th><th>提交</th></tr>';
+  x.top_active_students.forEach(function(t,i){
+    s3 += '<tr><td>'+(i+1)+'</td><td>'+esc(t.name)+'</td><td>'+t.messages+'</td><td>'+
+          t.questions+'</td><td>'+t.answers+'</td><td>'+t.submissions+'</td></tr>';});
+  card('③ 最活跃学生 Top 5', s3+'</table>');
+
+  var s4 = '';
+  var mx = Math.max.apply(null, Object.values(x.daily_message_trend).concat([1]));
+  Object.entries(x.daily_message_trend).forEach(function(e){
+    s4 += '<div class="row"><span class="label">'+esc(e[0])+'</span>'+
+          '<div class="bar" style="flex:1"><i style="width:'+(e[1]/mx*100).toFixed(1)+'%"></i></div>'+
+          '<span class="val">'+e[1]+'</span></div>';});
+  card('④ 每日消息趋势', s4);
+
+  var s5 = '';
+  Object.entries(x.qa_topic_distribution).sort(function(a,b){return b[1]-a[1];}).forEach(function(e){
+    s5 += '<span class="tag">'+esc(e[0])+' × '+e[1]+'</span>';});
+  card('⑤ Q&A 主题分布', s5 || '无数据');
+
+  var s6 = '<table><tr><th>预警规则</th><th>条数</th></tr>';
+  Object.entries(x.alert_rule_counts).forEach(function(e){
+    s6 += '<tr><td>'+esc(e[0])+'</td><td>'+e[1]+'</td></tr>';});
+  card('⑥ 预警规则统计', s6+'</table>');
+
+  var s7 = '<table><tr><th>学生</th><th>发言</th><th>回答</th><th>能力标签（由互动推断）</th></tr>';
+  x.student_profiles.forEach(function(p){
+    s7 += '<tr><td>'+esc(p.name)+'</td><td>'+p.messages+'</td><td>'+p.answers+'</td><td>'+
+          (p.skill_tags||[]).map(function(t){return '<span class="tag">'+esc(t)+'</span>';}).join('')+
+          '</td></tr>';});
+  card('⑦ 学生画像（Top 10）', s7+'</table>', true);
+
+  card('⑧ 数据维度', '<div class="kpi">'+d.dimension_count+'</div><small>'+
+       Object.keys(x).join(' · ')+'</small>', true);
+  app.innerHTML = html.join('');
+})();
+</script>
+</body>
+</html>

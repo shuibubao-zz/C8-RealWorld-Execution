@@ -1,0 +1,118 @@
+# C8 端到端流水线运行输出
+
+解释器：C:\Users\卢怡然\.workbuddy\binaries\python\versions\3.13.12\python.exe
+开始时间：2026-11-14T20:12:52
+
+> 所有模块均以独立 CLI 子进程方式调用，用于验证「模块可独立运行」。
+
+## gen_fixture  (exit=0)
+```
+synthetic messages: 150, labels: 158, increment: 12, out: C:\Users\卢怡然\Desktop\C8\demo\data
+
+```
+
+## L1_bridge  (exit=0)
+```
+[wechat_bridge] source=synthetic synthetic=True group=Elite20-示例群（合成） days=7 count=150
+[wechat_bridge] types={'text': 116, 'file': 12, 'link': 9, 'image': 6, 'voice': 4, 'system': 3}
+[wechat_bridge] output=C:\Users\卢怡然\Desktop\C8\evidence\sample_output.jsonl meta=C:\Users\卢怡然\Desktop\C8\evidence\sample_output.meta.json
+[wechat_bridge] 注意：输出为合成脱敏样本，不是真实群消息。
+
+```
+
+## L2_classifier  (exit=0)
+```
+[classifier] accuracy=1.0000 (150/150)
+[classifier] rows=150 dist={'submission': 12, 'question': 14, 'answer': 14, 'discussion': 34, 'announcement': 6, 'resource': 9, 'social': 61}
+[classifier] output=C:\Users\卢怡然\Desktop\C8\evidence\classified.jsonl metrics=C:\Users\卢怡然\Desktop\C8\evidence\classifier_metrics.json
+
+```
+
+## L2_linker  (exit=0)
+```
+[linker] rows=150 dist={'C1': 12, 'C4B': 10, 'C6A': 9, 'C7': 8, 'C8': 8, 'C5': 9, 'C2': 10, 'C3': 9, '(none)': 75} output=C:\Users\卢怡然\Desktop\C8\evidence\challenge_refs.json
+
+```
+
+## L2_detector  (exit=0)
+```
+[detector] events=8 complete=4 incomplete=4 skipped=0 output=C:\Users\卢怡然\Desktop\C8\evidence\submissions.json
+
+```
+
+## L2_qa  (exit=0)
+```
+[qa_extractor] pairs=14 avg_quality=0.714 matched={'reply_to': 14} output=C:\Users\卢怡然\Desktop\C8\evidence\qa_pairs.json
+
+```
+
+## L3_graph  (exit=0)
+```
+[graph] {"nodes": {"Student": 22, "Challenge": 8, "Submission": 8, "Message": 150, "QAPair": 14, "Report": 0}, "edges": {"SENT": 150, "TAGGED_WITH": 75, "SUBMITTED": 16, "PROGRESSED_TO": 8, "ASKED": 14, "ANSWERED": 14, "MENTORED": 14}, "total_nodes": 202, "total_edges": 291}
+[graph] output=C:\Users\卢怡然\Desktop\C8\evidence\graph.json
+
+```
+
+## L3_nl_query  (exit=0)
+```
+[nl_query] queries=6 intents=['class_summary', 'faq', 'missing_by_challenge', 'student_profile', 'student_submissions', 'top_active'] output=C:\Users\卢怡然\Desktop\C8\evidence\nl_query_answers.json
+  - [student_submissions] 学生03 提交了哪些挑战？ -> 学生03 共提交 1 项：C3(完整)
+  - [missing_by_challenge] C4B 还有谁没交？ -> C4B 已提交 1 人，未提交 22 人。未提交名单（前 30）：学生01、学生02、学生03、学生04、学生05、学生
+  - [top_active] 最近一周谁最活跃？ -> 发言量 Top5：学生04 11 条；学生06 10 条；学生01 8 条；学生09 8 条；学生12 8 条
+  - [faq] 关于 C5 的常见问题有哪些？ -> 检索到 2 条相关 Q&A，质量最高的 3 条：
+- Q: C5 的拿来说明至少要列几个参考来源？
+  A: 检查清单写
+  - [student_profile] 学生01 的画像是什么？ -> 学生01：发言 8 条，提问 1 次，回答 1 次，提交 1 项，关联挑战标签 C1、C3、C5。画像由群互动统计推断，
+  - [class_summary] 这周班级状态如何？ -> 班级状态：22 名学生、8 个挑战、150 条消息、8 次提交、14 条 Q&A；消息意图分布 {'announceme
+
+```
+
+## L4_alerts  (exit=0)
+```
+[alert] types=4 total=14 counts={'deadline_warning': 1, 'silent_student': 0, 'low_submission_rate': 8, 'activity_drop': 1, 'missing_attachment': 4} as_of=2026-11-18T00:00:00 simulated=True
+
+```
+
+## L4_watcher  (exit=0)
+```
+[watcher] input=12 new=8 duplicates=4 runs=1
+
+```
+
+## L4_report  (exit=0)
+```
+[report] dimensions=8 report=C:\Users\卢怡然\Desktop\C8\evidence\weekly_report.md data=C:\Users\卢怡然\Desktop\C8\evidence\dashboard_data.json dashboard_js=C:\Users\卢怡然\Desktop\C8\demo\wechat-class-manager\dashboard\dashboard_data.js
+
+```
+
+## unittest  (exit=0)
+```
+[HOLDOUT] 手写变体集 accuracy=1.0000 (20/20) confusion={}
+
+test_01_schema_and_volume (test_all.C8TestCase.test_01_schema_and_volume) ... ok
+test_02_fixture_deterministic (test_all.C8TestCase.test_02_fixture_deterministic) ... ok
+test_03_classifier_accuracy_synthetic (test_all.C8TestCase.test_03_classifier_accuracy_synthetic) ... ok
+test_04_classifier_accuracy_holdout (test_all.C8TestCase.test_04_classifier_accuracy_holdout)
+独立于生成模板的 20 条手工变体，结果打印到测试输出，不隐藏。 ... ok
+test_05_challenge_linker (test_all.C8TestCase.test_05_challenge_linker) ... ok
+test_06_submission_detector (test_all.C8TestCase.test_06_submission_detector) ... ok
+test_07_qa_extractor (test_all.C8TestCase.test_07_qa_extractor) ... ok
+test_08_graph_scale_and_crud (test_all.C8TestCase.test_08_graph_scale_and_crud) ... ok
+test_09_nl_query_coverage (test_all.C8TestCase.test_09_nl_query_coverage) ... ok
+test_10_skill_assets_complete (test_all.C8TestCase.test_10_skill_assets_complete) ... ok
+test_11_watcher_incremental_dedup (test_all.C8TestCase.test_11_watcher_incremental_dedup) ... ok
+test_12_alert_rules (test_all.C8TestCase.test_12_alert_rules) ... ok
+test_13_report_and_dashboard_dimensions (test_all.C8TestCase.test_13_report_and_dashboard_dimensions) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.033s
+
+OK
+```
+
+## 验收矩阵摘要
+```
+{"pass(合成数据)": 2, "pass": 15, "not_met": 5}
+```
+
+结束时间：2026-11-14T20:12:56

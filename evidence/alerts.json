@@ -1,0 +1,187 @@
+{
+  "as_of": "2026-11-18T00:00:00",
+  "simulated_as_of": true,
+  "data_window": [
+    "2026-11-02T09:01:00+08:00",
+    "2026-11-02T17:59:00+08:00"
+  ],
+  "rules": {
+    "deadline_warning": "距 deadline <=3 天且该挑战仍有未提交学生",
+    "silent_student": "最近 3 天零发言且此前有发言",
+    "low_submission_rate": "挑战提交率 < 30%",
+    "activity_drop": "后半窗发言量相对前半窗下降 > 50% (KSTAR ΔE)",
+    "missing_attachment": "提交缺 AI 日志等必要附件"
+  },
+  "rule_counts": {
+    "deadline_warning": 1,
+    "silent_student": 0,
+    "low_submission_rate": 8,
+    "activity_drop": 1,
+    "missing_attachment": 4
+  },
+  "triggered_rule_types": 4,
+  "total_alerts": 14,
+  "alerts": [
+    {
+      "rule": "deadline_warning",
+      "severity": "high",
+      "message": "C1 距截止仅 2 天，仍有 21 人未提交",
+      "data": {
+        "challenge": "C1",
+        "days_left": 2,
+        "missing_count": 21,
+        "missing_sample": [
+          "学生02",
+          "学生03",
+          "学生04",
+          "学生05",
+          "学生06"
+        ]
+      }
+    },
+    {
+      "rule": "low_submission_rate",
+      "severity": "high",
+      "message": "C1 提交率 4.5% 低于 30% 阈值",
+      "data": {
+        "challenge": "C1",
+        "submitted": 1,
+        "total_students": 22,
+        "rate": 0.0455
+      }
+    },
+    {
+      "rule": "low_submission_rate",
+      "severity": "high",
+      "message": "C2 提交率 4.5% 低于 30% 阈值",
+      "data": {
+        "challenge": "C2",
+        "submitted": 1,
+        "total_students": 22,
+        "rate": 0.0455
+      }
+    },
+    {
+      "rule": "low_submission_rate",
+      "severity": "high",
+      "message": "C3 提交率 4.5% 低于 30% 阈值",
+      "data": {
+        "challenge": "C3",
+        "submitted": 1,
+        "total_students": 22,
+        "rate": 0.0455
+      }
+    },
+    {
+      "rule": "low_submission_rate",
+      "severity": "high",
+      "message": "C4B 提交率 4.5% 低于 30% 阈值",
+      "data": {
+        "challenge": "C4B",
+        "submitted": 1,
+        "total_students": 22,
+        "rate": 0.0455
+      }
+    },
+    {
+      "rule": "low_submission_rate",
+      "severity": "high",
+      "message": "C5 提交率 4.5% 低于 30% 阈值",
+      "data": {
+        "challenge": "C5",
+        "submitted": 1,
+        "total_students": 22,
+        "rate": 0.0455
+      }
+    },
+    {
+      "rule": "low_submission_rate",
+      "severity": "high",
+      "message": "C6A 提交率 4.5% 低于 30% 阈值",
+      "data": {
+        "challenge": "C6A",
+        "submitted": 1,
+        "total_students": 22,
+        "rate": 0.0455
+      }
+    },
+    {
+      "rule": "low_submission_rate",
+      "severity": "high",
+      "message": "C7 提交率 4.5% 低于 30% 阈值",
+      "data": {
+        "challenge": "C7",
+        "submitted": 1,
+        "total_students": 22,
+        "rate": 0.0455
+      }
+    },
+    {
+      "rule": "low_submission_rate",
+      "severity": "high",
+      "message": "C8 提交率 4.5% 低于 30% 阈值",
+      "data": {
+        "challenge": "C8",
+        "submitted": 1,
+        "total_students": 22,
+        "rate": 0.0455
+      }
+    },
+    {
+      "rule": "activity_drop",
+      "severity": "medium",
+      "message": "导师 活跃度下降：前半窗 10 条 -> 后半窗 3 条",
+      "data": {
+        "wechat_id": "t01",
+        "first_half": 10,
+        "second_half": 3,
+        "delta": -7
+      }
+    },
+    {
+      "rule": "missing_attachment",
+      "severity": "medium",
+      "message": "学生05 的 C5 提交缺少 AI日志",
+      "data": {
+        "student": "学生05",
+        "challenge": "C5",
+        "item": "AI日志",
+        "submission_id": "SUB-005"
+      }
+    },
+    {
+      "rule": "missing_attachment",
+      "severity": "medium",
+      "message": "学生06 的 C6A 提交缺少 AI日志",
+      "data": {
+        "student": "学生06",
+        "challenge": "C6A",
+        "item": "AI日志",
+        "submission_id": "SUB-006"
+      }
+    },
+    {
+      "rule": "missing_attachment",
+      "severity": "medium",
+      "message": "学生07 的 C7 提交缺少 AI日志",
+      "data": {
+        "student": "学生07",
+        "challenge": "C7",
+        "item": "AI日志",
+        "submission_id": "SUB-007"
+      }
+    },
+    {
+      "rule": "missing_attachment",
+      "severity": "medium",
+      "message": "学生08 的 C8 提交缺少 AI日志",
+      "data": {
+        "student": "学生08",
+        "challenge": "C8",
+        "item": "AI日志",
+        "submission_id": "SUB-008"
+      }
+    }
+  ],
+  "_note": "预警基于合成脱敏样本计算；deadline 规则使用模拟时间点，不构成真实课程提醒。"
+}
